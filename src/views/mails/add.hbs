@@ -1,0 +1,24 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card">
+                <div class="card-body">
+                    <form action="/mails/add" method="POST">
+                        <div class="form-group p-2">
+                            <input type="text" class="form-control" name="asunto" placeholder="Digite el asunto del correo" required autofocus>                            
+                        </div>
+                        <div class="form-group p-2">
+                            <input type="mail" class="form-control" name="remitente" placeholder="Digite el correo del remitente" required>
+                        </div>
+                        <div class="form-control p-2">
+                            <textarea name="mensaje" cols="30" rows="10" class="form-control" placeholder="Escriba su mensaje aquí" required></textarea>
+                        </div>
+                        <div class="form-group p-2">
+                            <button class="btn btn-success btn-block">ENVIAR</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
